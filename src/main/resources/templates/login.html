@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン - Owner's Gate</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 30px;
+            width: 300px;
+        }
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            margin: 0 0 5px;
+        }
+        .subtitle {
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .error {
+            background-color: #fdecea;
+            border: 1px solid #e74c3c;
+            color: #c0392b;
+            font-size: 13px;
+            padding: 8px;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Owner's Gate</h1>
+        <p class="subtitle">マンション売却・家財整理ダッシュボード</p>
+
+        <form th:action="@{/login}" method="post">
+            <div th:if="${param.error}" class="error">
+                ユーザー名またはパスワードが違います。
+            </div>
+            <label for="username">ユーザー名</label>
+            <input type="text" id="username" name="username" required autofocus>
+
+            <label for="password">パスワード</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="btn">ログイン</button>
+        </form>
+    </div>
+</body>
+</html>

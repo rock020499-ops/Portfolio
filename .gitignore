@@ -1,0 +1,17 @@
+# ビルド成果物（Mavenが生成するもの・コミット不要）
+target/
+
+# H2のDBファイル（データが入っているが、起動時に自動生成されるので不要）
+data/
+
+# Eclipse固有のプロジェクト設定（IDEに依存するので上げない）
+.settings/
+.classpath
+.project
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
+
+# ログファイル
+*.log
