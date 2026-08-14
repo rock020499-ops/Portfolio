@@ -89,7 +89,20 @@ com.ownersgate
 
 ---
 
-## 起動方法
+## 起動方法　
+
+1.※インターネットで確認する場合（AWS環境へデプロイ済）
+
+1. ブラウザで `http://13.192.78.72:8080` を開く
+   ※「接続が保護されていません」と表示された場合は「詳細設定」→「アクセスする」で進んでください
+2. 以下でログイン
+
+   | 項目 | 値 |
+   |---|---|
+   | ユーザー名 | `owner` |
+   | パスワード | `ownerpass9999` |
+
+2.※ローカル開発環境で確認する場合
 
 1. IDE（Eclipse 等）で `OwnersGateApplication.java` を実行
 2. ブラウザで `http://localhost:8080` を開く
@@ -121,7 +134,7 @@ com.ownersgate
 - **CSRF の有効化**
 （学習用のためSecurityConfigにて.csrf(csrf -> csrf.disable());で無効化の暫定対応
 本来はfetch の各リクエストに `[csrfHeader]: csrfToken` を付与し、外部からの侵入を防ぐ）
-- **クラウドへのデプロイ**（AWSのEC2へアプリ、RDSへPostgreSQLの環境作成）
+- **クラウドへのデプロイ**（AWSのEC2へアプリ、RDSへPostgreSQLの環境作成）⇒完了
 
 ---
 
