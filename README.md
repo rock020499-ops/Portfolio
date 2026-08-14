@@ -98,7 +98,7 @@ com.ownersgate
    | 項目 | 値 |
    |---|---|
    | ユーザー名 | `owner` |
-   | パスワード | `ownerpass` |
+   | パスワード | `ownerpass9999` |
 
 - DBの中身は `http://localhost:8080/h2-console`（JDBC URL: `jdbc:h2:file:./data/owners_gate_db` / ユーザー `sa`）で確認できます。※開発時のみ
 - 起動のたびに `schema.sql` / `data.sql` が実行され、初期データに戻ります。※開発時のみ

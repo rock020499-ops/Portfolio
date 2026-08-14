@@ -8,7 +8,7 @@
 -- password 列は "ownerpass" を BCrypt でハッシュ化した値。
 -- 平文はDBのどこにも保存されない（ログイン時はハッシュ同士で照合する）。
 INSERT INTO app_user (username, password, role)
-VALUES ('owner', '$2a$10$IGFzjjUMKPLqQHI9gAr.BuitNmbcY4wg/liK1ZeYyUT0YdDTBrxVy', 'USER');
+VALUES ('owner', '$2a$12$IuJ51UUmPzcmwkCFd69eguV7lVTCe58ekkYRAqEnJdzamQRZyq6PG', 'USER');
 
 -- ---------- 廃棄アイテム（廃棄リスト2の内容） ----------
 
