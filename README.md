@@ -134,7 +134,10 @@ com.ownersgate
 - **CSRF の有効化**
 （学習用のためSecurityConfigにて.csrf(csrf -> csrf.disable());で無効化の暫定対応
 本来はfetch の各リクエストに `[csrfHeader]: csrfToken` を付与し、外部からの侵入を防ぐ）
-- **クラウドへのデプロイ**（AWSのEC2へアプリ、RDSへPostgreSQLの環境作成）⇒完了
+
+## 対応済課題
+
+- **クラウドへのデプロイ**（AWSのEC2へアプリ、RDSへPostgreSQLの環境作成）
 
 ---
 
